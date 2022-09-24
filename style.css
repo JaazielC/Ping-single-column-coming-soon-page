@@ -1,0 +1,167 @@
+:root {
+    --color-blue: hsl(223, 87%, 63%);
+    --color-gray: hsl(0, 0%, 59%);
+    --color-red: hsl(354, 100%, 66%);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+main {
+    min-width: 300px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    margin-top: 6.9em;
+    margin-bottom: 4.8em;
+}
+
+main h1 {
+    font-size: 1.58rem;
+    margin: 0;
+}
+
+main p {
+    margin-bottom: 3em;
+}
+
+form {
+    margin-bottom: 6em;
+}
+
+.form {
+    display: block;
+    padding: 1.25em 7.67em 1.25em 2em;
+    border-radius: 30px;
+    border: 1px solid hsl(220, 16.67%, 78.82%);
+    font-size: 1rem;
+}
+
+.email {
+    margin-bottom: 1.25em;
+    color: hsl(220, 16.67%, 78.82%);
+}
+
+.error {
+    border: 1px solid var(--color-red);
+}
+
+.error-message {
+    color: var(--color-red);
+    font-size: 1rem;
+    font-style: italic;
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    
+}
+
+.form-btn {
+    padding: 1.25em 8em;
+    color: #fff;
+    border: none;
+    background-color: var(--color-blue);
+    box-shadow: 0 5px 10px rgba(79, 125, 243, 0.3);
+}
+
+#dashboard-img {
+    width: 85%;
+    margin-bottom: 7rem;
+    max-width: 525px;
+}
+
+
+.fa {
+    color: var(--color-blue);
+    padding: .6rem;
+    margin: 0 .3em;
+    border: 1px solid #e1e4e9;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all .2s;
+}
+
+.fa:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fa-facebook {
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+.fa-instagram {
+    padding-left: .65rem;
+    padding-right: .65rem;
+}
+
+.social-media-icons {
+    margin-bottom: 1rem;
+}
+
+span {
+    font-weight: 300;
+    color: var(--color-gray);
+}
+
+#copyright {
+    font-size: .75rem;
+    color: var(--color-gray);
+}
+
+@media (min-width: 800px) {
+    #logo {
+        margin-top: 5.9em;
+        margin-bottom: 2.9em;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    main p {
+        font-size: 1.3rem;
+        margin-bottom: 2em;
+    }
+
+    form {
+        width: 100%;
+        margin-bottom: 4.5em;
+    }
+
+    .form {
+        display: inline;
+    }
+
+    .email {
+        margin: 0 1em 0 0;
+        padding: 1.25em 13.67em 1.25em 2em;
+    }
+
+    .form-btn {
+        padding: 1.25em 4em;
+    }
+
+    main > .flex {
+        display: inline-flex;
+        flex-direction: row;
+        
+    }
+
+    #dashboard-img {
+        width: 70%;
+        min-width: 650px;
+    }
+}

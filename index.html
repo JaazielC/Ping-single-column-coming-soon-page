@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,20 +18,32 @@
   </style>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main class="flex">
+    <img src="images/logo.svg" alt="Ping logo" id="logo">
+    <h1><span>We are launching</span> soon!</h1>
+    <p>
+      Subscribe and get notified.
+    </p>
+    <form class="flex">
+      <input type="email" required placeholder="Your email address..." class="form email">
+      <button type="submit" class="form form-btn">Notify Me</button>
+      <span class="error-message">Error</span>
+    </form>
+    <img src="images/illustration-dashboard.png" alt="illustration of dashboard" id="dashboard-img">
+    <div class="social-media-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <p id="copyright">&copy; Copyright Ping. All rights reserved.</p>
+  </main>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/JaazielC">JaazielC</a>.
     </p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
